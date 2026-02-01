@@ -1,0 +1,6 @@
+project_id = "your-gcp-project-id"
+region     = "us-central1"
+
+# Optional: set these after creating a dedicated SA for the app and for the BQ loader
+# publisher_service_account    = "your-app-sa@your-gcp-project-id.iam.gserviceaccount.com"
+# bigquery_loader_service_account = "your-loader-sa@your-gcp-project-id.iam.gserviceaccount.com"

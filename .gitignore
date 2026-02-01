@@ -1,0 +1,43 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build
+.next
+out
+build
+dist
+*.tsbuildinfo
+
+# Env (do not commit – public repo)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Terraform (tfvars may contain project IDs / SA emails – do not commit)
+infrastructure/terraform/**/.terraform
+infrastructure/terraform/**/*.tfstate
+infrastructure/terraform/**/*.tfstate.*
+infrastructure/terraform/**/.terraform.lock.hcl
+infrastructure/terraform/**/terraform.tfvars
+infrastructure/terraform/**/tfplan
+infrastructure/terraform/**/*.tfplan
+infrastructure/terraform/**/backend*.hcl
+!infrastructure/terraform/**/backend.example.hcl
+
+# OS
+.DS_Store
+Thumbs.db
